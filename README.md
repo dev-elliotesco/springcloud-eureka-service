@@ -53,7 +53,7 @@ mvn clean package
 ```
 
 
-### Docker (Solo el servicio Eureka):
+### Docker (Solo el servicio):
 
 ```bash
 # Construye la imagen Docker
@@ -63,7 +63,7 @@ docker build -t eureka-service .
 docker run -p 8761:8761 eureka-service
 ```
 
-### Docker Compose (Todo el proyecto):
+### Docker Compose (Todos los servicios
 
 ```bash
 # Clona este repositorio del proyecto completo
