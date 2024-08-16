@@ -29,14 +29,10 @@ mvn clean install
 
 ```
 
-## Configuración
-Instrucciones para configurar el proyecto antes de ejecutarlo.
-
-...
-
-
 ## Uso
 Pasos para ejecutar el proyecto.
+
+### Localmente:
 
 ```bash
 # Comando para iniciar el proyecto usando Maven
@@ -45,11 +41,38 @@ mvn spring-boot:run
 
 ```bash
 # O ejecutando el JAR directamente
-java -jar target/xxxxxxx-0.0.1-SNAPSHOT.jar
+# Nota: Asegúrate de haber compilado y generado el JAR antes de ejecutar este comando
+java -jar target/eureka-service-0.0.1-SNAPSHOT.jar
 ```
+Para generar el JAR:
 
 ```bash
-# O utilizando Docker Compose
+# Generando el JAR
+# Nota: Este comando compila el código, ejecuta las pruebas y genera el JAR
+mvn clean package
+```
+
+
+### Docker (Solo el servicio Eureka):
+
+```bash
+# Construye la imagen Docker
+docker build -t eureka-service .
+
+# Ejecuta el contenedor Docker
+docker run -p 8761:8761 eureka-service
+```
+
+### Docker Compose (Todo el proyecto):
+
+```bash
+# Clona este repositorio del proyecto completo
+git clone https://github.com/dev-elliotesco/springcloud-demo-mr.git
+
+# Entra en el directorio del proyecto completo
+cd springcloud-demo-mr
+
+# Ejecuta Docker Compose
 docker-compose up
 ```
 
