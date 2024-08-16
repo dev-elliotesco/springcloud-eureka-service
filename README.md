@@ -52,7 +52,6 @@ Para generar el JAR:
 mvn clean package
 ```
 
-
 ### Docker (Solo el servicio):
 
 ```bash
@@ -63,7 +62,7 @@ docker build -t eureka-service .
 docker run -p 8761:8761 eureka-service
 ```
 
-### Docker Compose (Todos los servicios
+### Docker Compose (Todos los servicios)
 
 ```bash
 # Clona este repositorio del proyecto completo
