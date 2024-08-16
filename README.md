@@ -1,7 +1,7 @@
 # Eureka Service
 
 ## Descripción
-Este es el servicio Eureka de nuestro proyecto Spring Cloud. Eureka es un 
+Este es un microservicio de eureka desarrollado con Spring Boot y Spring Cloud. Eureka es un 
 servidor de descubrimiento de servicios que permite a los microservicios 
 registrarse y descubrirse entre sí.
 
